@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 1px 3px -2px black;
+  align-items: center;
+  height: 65px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  position: sticky;
+}
+
+.left-navbar {
+  display: flex;
+  background: transparent;
+}
+
+.right-navbar {
+  background: transparent;
+}
+
+.left-navbar-logo {
+  padding: 0.6rem;
+  margin-left: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.left-navbar-text {
+  padding: 0.6rem;
+  margin-left: 4px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right-navbar ul {
+  display: flex;
+  list-style: none;
+  background: transparent;
+}
+
+.right-navbar ul li {
+  background: transparent;
+}
+
+div.right-navbar > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+div.right-navbar > ul > li > a,
+div.right-navbar > ul > li > a:after,
+div.right-navbar > ul > li > a:before {
+  transition: all .5s;
+}
+
+div.right-navbar > ul > li > a:hover {
+  color: #905aff;
+}
+
+
+
+
