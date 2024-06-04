@@ -1,8 +1,10 @@
-import React from 'react'
 import "./Navbar.css"
 import { LinearGradient } from 'react-text-gradients'
+import { useState } from "react"
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false)
+  
   return (
     <>
       <div className="navbar">
@@ -11,7 +13,7 @@ const Navbar = () => {
               className='left-navbar-logo'
               gradient={['to left', '#17acff ,#ff68f0']}
             >
-                  
+              LL   
             </LinearGradient>
             <LinearGradient
               className='left-navbar-text'
@@ -20,7 +22,7 @@ const Navbar = () => {
               Linux-DEX
             </LinearGradient>
         </div>
-        <div className="right-navbar">
+        <div className={toggleMenu ? "right-navbar active" : "right-navbar"}>
           <ul>
             <li>
               <a href="#">
@@ -54,7 +56,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="space"></div>
+        <div id="mobile" onClick={() => setToggleMenu(!toggleMenu)}>
+          <i id="bar" className={toggleMenu ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
       </div>
     </>
   )

@@ -1,12 +1,11 @@
-import React from 'react'
 import "./Home.css"
 
 const Home = () => {
   return (
     <div
-      style={{ position: "relative", background: "red", height: "100vh"}}
+      style={{ position: "relative", background: "red", height: "100vh", top: "0"}}
     >
-      <h1>hero page</h1>
+      home page
     </div>
   )
 }
