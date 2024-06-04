@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
 import { LinearGradient } from 'react-text-gradients'
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,7 +11,7 @@ const Navbar = () => {
               className='left-navbar-logo'
               gradient={['to left', '#17acff ,#ff68f0']}
             >
-                 
+                  
             </LinearGradient>
             <LinearGradient
               className='left-navbar-text'

@@ -6,7 +6,15 @@
   height: 65px;
   background: transparent;
   backdrop-filter: blur(10px);
-  position: sticky;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  width: 100vw;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar.hidden {
+  top: -100px;
 }
 
 .left-navbar {
@@ -43,6 +51,7 @@
 }
 
 div.right-navbar > ul > li > a {
+  background: transparent;
   display: block;
   text-decoration: none;
   color: #aaa;
