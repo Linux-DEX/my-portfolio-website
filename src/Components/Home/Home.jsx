@@ -2,10 +2,8 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <div
-      style={{ position: "relative", background: "red", height: "100vh", top: "0"}}
-    >
-      home page
+    <div className="Home">
+      <h1>Home</h1>
     </div>
   )
 }

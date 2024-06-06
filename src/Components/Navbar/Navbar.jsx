@@ -12,7 +12,7 @@ const Navbar = () => {
           <i id="bar" className={toggleMenu ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
         <div className="left-navbar">
-            <img src="../../../public/images/terminal.png" alt="logo" className="navbar-logo" />
+            <img src="../../../images/terminal.png" alt="logo" className="navbar-logo" />
             <LinearGradient
               className='left-navbar-text'
               gradient={['to left', '#17acff ,#ff68f0']}

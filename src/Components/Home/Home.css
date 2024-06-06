@@ -1,0 +1,9 @@
+.Home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(9, 9, 30) 20%, rgba(26,25,29,1) 100%);
+}
+
+

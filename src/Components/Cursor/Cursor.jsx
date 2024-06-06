@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import "./Cursor.css"
 
 const Cursor = () => {
@@ -33,29 +33,13 @@ const Cursor = () => {
     }
   };
  
-  const handleMouseDown = () => {
-    setIsClicking(true);
-  };
- 
-  const handleMouseUp = () => {
-    setIsClicking(false);
-  };
- 
-  const handleButtonHover = (hovered) => {
-    setButtonHovered(hovered);
-  };
- 
   useEffect(() => {
     document.addEventListener('mousemove', move);
     document.addEventListener('touchmove', move);
-    document.addEventListener('mousedown', handleMouseDown);
-    document.addEventListener('mouseup', handleMouseUp);
  
     return () => {
       document.removeEventListener('mousemove', move);
       document.removeEventListener('touchmove', move);
-      document.removeEventListener('mousedown', handleMouseDown);
-      document.removeEventListener('mouseup', handleMouseUp);
     };
   }, []);
 
