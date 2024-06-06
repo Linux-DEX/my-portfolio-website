@@ -8,13 +8,11 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
+        <div id="mobile" onClick={() => setToggleMenu(!toggleMenu)}>
+          <i id="bar" className={toggleMenu ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
         <div className="left-navbar">
-            <LinearGradient
-              className='left-navbar-logo'
-              gradient={['to left', '#17acff ,#ff68f0']}
-            >
-              LL   
-            </LinearGradient>
+            <img src="../../../public/images/terminal.png" alt="logo" className="navbar-logo" />
             <LinearGradient
               className='left-navbar-text'
               gradient={['to left', '#17acff ,#ff68f0']}
@@ -55,9 +53,6 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-        </div>
-        <div id="mobile" onClick={() => setToggleMenu(!toggleMenu)}>
-          <i id="bar" className={toggleMenu ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
       </div>
     </>

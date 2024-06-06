@@ -22,12 +22,14 @@
   background: transparent;
 }
 
-.right-navbar {
+.navbar-logo {
+  height: 2.5rem;
+  background-blend-mode: multiply;
   background: transparent;
 }
 
-.left-navbar .left-navbar-logo {
-  font-weight: 600;
+.right-navbar {
+  background: transparent;
 }
 
 .left-navbar .left-navbar-text {
@@ -92,6 +94,10 @@
     background: transparent;
   }
 
+  .navbar-logo {
+    height: 2.2rem;
+  }
+
   .right-navbar ul li a {
     text-decoration: none;
     font-size: 1rem;
@@ -114,15 +120,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     gap: 1rem;
     padding: 20px 0;
     background: transparent;
   }
 
+  .navbar-logo {
+    height: 1.6rem;
+  }
+
   .right-navbar ul li a {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #fff;
     transition: 0.3s ease-in-out;
@@ -144,9 +154,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 90px;
-    right: -300px;
-    width: 300px;
+    top: 70px;
+    right: -100vw;
+    width: 100vw;
     height: 100vh;
     background: #1A191D;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
@@ -168,6 +178,14 @@
   #mobile i {
     font-size: 1.6rem;
   }
+
+  .left-navbar {
+    font-size: 1.5rem;
+  }
+
+  .navbar-logo {
+    height: 2rem;
+  }
 }
 
 @media(max-width: 500px) {
@@ -177,12 +195,24 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 72px;
-    right: -300px;
-    width: 300px;
+    top: 70px;
+    right: -100vw;
+    width: 100vw;
     height: 100vh;
     background: #1A191D;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
+  }
+
+  #mobile i {
+    font-size: 1.3rem;
+  }
+
+  .left-navbar {
+    font-size: 1.3rem;
+  }
+
+  .navbar-logo {
+    height: 1.8rem;
   }
 }
