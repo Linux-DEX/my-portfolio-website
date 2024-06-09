@@ -3,7 +3,7 @@ import man from "../../../images/man.png";
 
 const Home = () => {
   return (
-    <div className="Home">
+    <div id="Home" className="Home">
       <div className="Home-left">
         <h2 className="small-text hi">Hi!, I&apos;m</h2>
         <h1 className="big-text">Sarabjeet Singh</h1>
@@ -18,6 +18,7 @@ innovation</p>
           <img src={man} alt="sarabjeet" className="img" />
         </div>
       </div>
+      <div className="down-arrow"></div>
     </div>
   );
 };

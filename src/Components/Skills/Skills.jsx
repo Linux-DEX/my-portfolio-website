@@ -1,11 +1,10 @@
-import React from 'react'
 import "./Skills.css"
 
 const Skills = () => {
   return (
-    <div
-      style={{ position: "relative"}}
-    >Skills</div>
+    <div className="Skills" id="Skills">
+      <h2>lksfjsfkj</h2>
+    </div>
   )
 }
 

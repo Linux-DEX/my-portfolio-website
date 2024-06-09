@@ -22,32 +22,32 @@ const Navbar = () => {
         </div>
         <div className={toggleMenu ? "right-navbar active" : "right-navbar"}>
           <ul>
-            <li>
-              <a href="#">
+            <li onClick={() => setToggleMenu(!toggleMenu)}>
+              <a href="#Home">
                 Home
               </a>
             </li>
-            <li>
-              <a href="#">
+            {/* <li onClick={() => setToggleMenu(!toggleMenu)}>
+              <a href="#About">
                 About
               </a>
-            </li>
-            <li>
+            </li> */}
+            <li onClick={() => setToggleMenu(!toggleMenu)}>
               <a href="#">
                 Skills
               </a>
             </li>
-            <li>
+            <li onClick={() => setToggleMenu(!toggleMenu)}>
               <a href="#">
                 My Work
               </a>
             </li>
-            <li>
+            <li onClick={() => setToggleMenu(!toggleMenu)}>
               <a href="#">
                 Experience
               </a>
             </li>
-            <li>
+            <li onClick={() => setToggleMenu(!toggleMenu)}>
               <a href="#">
                 Contact
               </a>
