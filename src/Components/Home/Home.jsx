@@ -1,11 +1,25 @@
-import "./Home.css"
+import "./Home.css";
+import man from "../../../images/man.png";
 
 const Home = () => {
   return (
     <div className="Home">
-      <h1>Home</h1>
+      <div className="Home-left">
+        <h2 className="small-text hi">Hi!, I&apos;m</h2>
+        <h1 className="big-text">Sarabjeet Singh</h1>
+        <hr />
+        <h2 className="small-text">Aspiring</h2>
+        <h1 className="big-text">Full Stack Developer</h1>
+        <p className="micro-text">with a passion for solving problems that involve creativity and
+innovation</p>
+      </div>
+      <div className="Home-right">
+        <div className="imgContainer">
+          <img src={man} alt="sarabjeet" className="img" />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
