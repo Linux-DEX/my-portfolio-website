@@ -33,12 +33,12 @@ const Navbar = () => {
               </a>
             </li> */}
             <li onClick={() => setToggleMenu(!toggleMenu)}>
-              <a href="#">
+              <a href="#Skills">
                 Skills
               </a>
             </li>
             <li onClick={() => setToggleMenu(!toggleMenu)}>
-              <a href="#">
+              <a href="#MyWork">
                 My Work
               </a>
             </li>

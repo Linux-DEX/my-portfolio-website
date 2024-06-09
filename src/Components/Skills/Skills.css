@@ -1,0 +1,66 @@
+.Skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+}
+
+.Skill-heading {
+    font-size: 4.2rem;
+    margin: 40px 0;
+}
+
+.expertise-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.expertise-card {
+  background: transparent;
+  border: 1px solid whitesmoke;
+  padding: 2rem;
+  width: 430px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  padding: 3rem;
+}
+
+.expertise-head {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.vl-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.hh {
+    color: rgb(255, 255, 255, 0.4);
+}
+
+.vl {
+    border-left: 3px solid rgb(255, 255, 255, 0.4);
+    height: auto;
+    margin-left: 15px;
+}
+
+.vl-container p {
+    font-size: 1.2rem;
+    padding: 7px;
+}
