@@ -82,10 +82,12 @@
 .skill-back {
   position: absolute;
   background-blend-mode: multiply;
-  filter: opacity(0.3);
+  filter: opacity(0.2);
   background: transparent;
-  top: 65vh;
+  top: 68vh;
   z-index: 1;
+  width: 44%;
+  height: 400px;
 }
 
 @media(max-width: 1280px) {
