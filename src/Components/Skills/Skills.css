@@ -1,15 +1,17 @@
 .Skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
 }
 
 .Skill-heading {
-    font-size: 4.2rem;
-    margin: 40px 0;
+  font-size: 4.2rem;
+  margin-bottom: 50px;
+  margin-top: -90px;
 }
 
 .expertise-cards {
@@ -22,22 +24,21 @@
 .expertise-card {
   background: transparent;
   border: 1px solid whitesmoke;
-  padding: 2rem;
   width: 430px;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-  padding: 3rem;
+  padding: 2.7rem;
 }
 
 .expertise-head {
-    display: flex;
-    gap: 1.7rem;
+  display: flex;
+  gap: 1.7rem;
 }
 
 .icon {
-  font-size: 3rem;
-  margin-bottom: 8px;
+  height: 4rem;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -45,22 +46,189 @@
 }
 
 .vl-container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .hh {
-    color: rgb(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255, 0.4);
+  margin: 3px;
 }
 
 .vl {
-    border-left: 3px solid rgb(255, 255, 255, 0.4);
-    height: auto;
-    margin-left: 15px;
+  border-left: 3px solid rgb(255, 255, 255, 0.4);
+  height: auto;
+  margin-left: 15px;
 }
 
 .vl-container p {
+  font-size: 1.2rem;
+  padding: 7px;
+}
+
+.highlight.blue {
+  color: rgb(93, 81, 255);
+}
+
+.highlight.pink {
+  color: rgb(250, 97, 255);
+}
+
+.highlight.orange {
+  color: rgb(250, 88, 88);
+}
+
+.skill-back {
+  position: absolute;
+  background-blend-mode: multiply;
+  filter: opacity(0.3);
+  background: transparent;
+  top: 65vh;
+  z-index: 1;
+}
+
+@media(max-width: 1280px) {
+  .Skill-heading {
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .expertise-card {
+    width: 340px;
+    padding: 2rem;
+  }
+
+  .vl-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .vl-container p {
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  .hh {
+    color: rgb(255, 255, 255, 0.4);
+    margin: 2px;
+  }
+
+  .vl {
+    border-left: 2.5px solid rgb(255, 255, 255, 0.4);
+  }
+
+  .skill-back {
+    width: 60%;
+  }
+}
+
+@media(max-width: 1024px) {
+  .Skill-heading {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-top: 70px;
+  }
+
+  .expertise-card {
+    width: 440px;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .vl-container p {
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  .skill-back {
+    width: 80%;
+  }
+}
+
+@media(max-width: 800px) {
+  .Skill-heading {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .expertise-card {
+    width: 440px;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .vl-container p {
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  .icon {
+    height: 2.7rem;
+    margin-top: 7px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .skill-back {
+    top: 90vh;
+    width: 90%;
+  }
+}
+
+@media(max-width: 500px) {
+  .Skills {
+    height: auto;
+  }
+
+  .Skill-heading {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .expertise-cards {
+    gap: 1rem;
+  }
+
+  .expertise-card {
+    width: 320px;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .vl-container p {
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  .icon {
+    height: 2.4rem;
+    margin-top: 5px;
+  }
+
+  .title {
     font-size: 1.2rem;
-    padding: 7px;
+  }
+
+  .skill-back {
+    top: 115vh;
+    width: 90%;
+  }
 }

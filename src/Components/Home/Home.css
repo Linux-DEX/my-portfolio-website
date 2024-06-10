@@ -102,7 +102,7 @@ hr {
 
 .down-arrow {
   position: absolute;
-  top: calc(100vh - 65px);
+  top: calc(100vh - 80px);
   left: calc(50% - 14px);
   width: 0;
   /* height: 30px;

@@ -1,11 +1,10 @@
-import React from 'react'
 import "./Mywork.css"
 
 const Mywork = () => {
   return (
-    <div
-      style={{ position: "relative", height: "100vh"}}
-    >Mywork</div>
+    <div className="MyWork" id="MyWork">
+      <h1>my work</h1>
+    </div>
   )
 }
 

@@ -3,21 +3,13 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <div className="Skills" id="Skills">
-      {/* <div className="Skill-top">
-        <h1 className="Skill-heading">My Expertise</h1>
-      </div>
-      <div className="Skill-bottom">
-        <div className="Skill-container"></div>
-        <div className="Skill-container"></div>
-        <div className="Skill-container"></div>
-      </div> */}
       <h1 className="Skill-heading">My Expertise</h1>
       <div className="expertise-cards">
         <div className="expertise-card">
           <div className="expertise-head">
-            <div className="icon">🖥️</div>
+            <img src="../../images/pc.png" alt="" className="icon"/>
             <h2 className="title">
-              <span className="highlight">Software</span> Development
+              <span className="highlight pink">Software</span> <br /> Development
             </h2>
           </div>
           <div className="expertise-card-text">
@@ -25,8 +17,8 @@ const Skills = () => {
             <div className="vl-container">
               <div className="vl"></div>
               <p>
-                Experienced in both functional and OOP: Dart, Python, Java,
-                JavaScript, TypeScript.
+                Experienced in both functional and OOP: Python, Java,
+                JavaScript, TypeScript, Linux, GitHub
               </p>
             </div>
             <div className="hh">&lt;h3&gt; </div>
@@ -34,43 +26,42 @@ const Skills = () => {
         </div>
         <div className="expertise-card">
           <div className="expertise-head">
-            <div className="icon">⚛️</div>
+            <img src="../../images/react.png" alt="" className="icon" />
             <h2 className="title">
-              <span className="highlight">Full Stack</span>
+              <span className="highlight blue">Full Stack</span>
               <br />
               Development
             </h2>
           </div>
-          <div>&lt;h3&gt; </div>
+          <div className="hh">&lt;h3&gt; </div>
           <div className="vl-container">
             <div className="vl"></div>
             <p>
-              Passionate about UI/UX. Over 1 years of development experience in
-              HTML, CSS, JS, React and NextJS frameworks.
+              Passionate about Full stack development. Experience in React, ExpressJS, NodeJS, and MongoDB, NextJS.
             </p>
           </div>
-          <div>&lt;h3&gt; </div>
+          <div className="hh">&lt;h3&gt; </div>
         </div>
         <div className="expertise-card">
           <div className="expertise-head">
-            <div className="icon">📱</div>
+            <img src="../../images/flutter.png" alt="" className="icon" />
             <h2 className="title">
-              <span className="highlight">Flutter Dev</span>
+              <span className="highlight orange">Flutter Dev</span>
               <br />
               Android
             </h2>
           </div>
-          <div>&lt;h3&gt;</div>
+          <div className="hh">&lt;h3&gt;</div>
           <div className="vl-container">
             <div className="vl"></div>
             <p>
-              Skilled in developing hybrid mobile apps and cross-platform
-              solutions using the Flutter framework.
+              Skilled in developing mobile apps using the Flutter framework and Firebase.
             </p>
           </div>
-          <div>&lt;h3&gt; </div>
+          <div className="hh">&lt;h3&gt;</div>
         </div>
       </div>
+      <img className="skill-back" src="https://tamalsen.dev/wp-content/uploads/2021/12/hello-world-html-code.png" alt="" />
     </div>
   );
 };
