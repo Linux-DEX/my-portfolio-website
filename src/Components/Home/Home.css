@@ -107,7 +107,7 @@ hr {
   width: 0;
   /* height: 30px;
   border: 1px solid; */
-  color: aquamarine;
+  color: rgb(152, 83, 255);
   border-radius: 2px;
   animation: jumpInfinite 1.5s infinite;
 }
