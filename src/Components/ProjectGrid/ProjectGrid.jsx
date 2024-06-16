@@ -83,7 +83,7 @@ const ProjectGrid = () => {
         />
       </a>
       <div className="large-card">
-        <a href="https://github.com/Linux-DEX/moodmate.git">
+        <a target="_blank" href="https://github.com/Linux-DEX/moodmate.git">
           <Card
             image={moodmate}
             title="Mental Health App"
@@ -91,7 +91,10 @@ const ProjectGrid = () => {
           />
         </a>
       </div>
-      <a href="https://github.com/Linux-DEX/MusicApp-Android.git">
+      <a
+        target="_blank"
+        href="https://github.com/Linux-DEX/MusicApp-Android.git"
+      >
         <Card
           image={musicapp}
           title="Music player App"

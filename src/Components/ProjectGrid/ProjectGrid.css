@@ -19,3 +19,36 @@ a {
     border-radius: 5px;
     overflow: hidden;
 }
+
+@media (max-width: 1280px) {
+    .ProjectGrid {
+        gap: 2rem;
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ProjectGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .ProjectGrid {
+        display: flex;
+        gap: 2rem;
+        padding: 4rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .ProjectGrid {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        flex-direction: column;
+    }
+}
