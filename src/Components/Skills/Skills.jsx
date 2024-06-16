@@ -17,8 +17,7 @@ const Skills = () => {
             <div className="vl-container">
               <div className="vl"></div>
               <p>
-                Experienced in both functional and OOP: Python, Java,
-                JavaScript, TypeScript, Linux, GitHub
+                Experienced in both functional and OOP: Python, JAVA, JavaScript, TypeScript, Linux, GitHub, AWS, Docker
               </p>
             </div>
             <div className="hh">&lt;h3&gt; </div>
@@ -37,7 +36,7 @@ const Skills = () => {
           <div className="vl-container">
             <div className="vl"></div>
             <p>
-              Passionate about Full stack development. Experience in React, ExpressJS, NodeJS, and MongoDB, NextJS.
+              Passionate about Full stack development. Experience in React, ExpressJS, NodeJS, and MongoDB, NextJS, Vite.
             </p>
           </div>
           <div className="hh">&lt;h3&gt; </div>
@@ -55,7 +54,7 @@ const Skills = () => {
           <div className="vl-container">
             <div className="vl"></div>
             <p>
-              Skilled in developing mobile apps using the Flutter framework and Firebase.
+              Skilled in developing mobile apps using the Dart, Flutter framework and Firebase.
             </p>
           </div>
           <div className="hh">&lt;h3&gt;</div>
