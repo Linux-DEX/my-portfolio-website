@@ -43,12 +43,12 @@ const Navbar = () => {
               </a>
             </li>
             <li onClick={() => setToggleMenu(!toggleMenu)}>
-              <a href="#">
+              <a href="#Experience">
                 Experience
               </a>
             </li>
             <li onClick={() => setToggleMenu(!toggleMenu)}>
-              <a href="#">
+              <a href="#Contact">
                 Contact
               </a>
             </li>
