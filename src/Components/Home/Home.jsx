@@ -1,5 +1,5 @@
 import "./Home.css";
-import man from "../../../images/man.png";
+import man from "../../assets/man.png";
 
 const Home = () => {
   return (

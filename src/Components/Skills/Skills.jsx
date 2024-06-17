@@ -1,4 +1,7 @@
 import "./Skills.css";
+import pc from "../../assets/pc.png";
+import react from "../../assets/react.png";
+import flutter from "../../assets/flutter.png";
 
 const Skills = () => {
   return (
@@ -7,7 +10,7 @@ const Skills = () => {
       <div className="expertise-cards">
         <div className="expertise-card">
           <div className="expertise-head">
-            <img src="../../images/pc.png" alt="" className="icon"/>
+            <img src={pc} alt="" className="icon"/>
             <h2 className="title">
               <span className="highlight pink">Software</span> <br /> Development
             </h2>
@@ -25,7 +28,7 @@ const Skills = () => {
         </div>
         <div className="expertise-card">
           <div className="expertise-head">
-            <img src="../../images/react.png" alt="" className="icon" />
+            <img src={react} alt="" className="icon" />
             <h2 className="title">
               <span className="highlight blue">Full Stack</span>
               <br />
@@ -43,7 +46,7 @@ const Skills = () => {
         </div>
         <div className="expertise-card">
           <div className="expertise-head">
-            <img src="../../images/flutter.png" alt="" className="icon" />
+            <img src={flutter} alt="" className="icon" />
             <h2 className="title">
               <span className="highlight orange">Flutter Dev</span>
               <br />

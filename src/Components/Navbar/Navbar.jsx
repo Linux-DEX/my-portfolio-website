@@ -1,6 +1,7 @@
 import "./Navbar.css"
 import { LinearGradient } from 'react-text-gradients'
 import { useState } from "react"
+import terminal from "../../assets/terminal.png"
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -12,7 +13,7 @@ const Navbar = () => {
           <i id="bar" className={toggleMenu ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
         <div className="left-navbar">
-            <img src="../../../images/terminal.png" alt="logo" className="navbar-logo" />
+            <img src={terminal} alt="logo" className="navbar-logo" />
             <LinearGradient
               className='left-navbar-text'
               gradient={['to left', '#17acff ,#ff68f0']}

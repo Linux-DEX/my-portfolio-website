@@ -1,4 +1,6 @@
 import "./WorkIntro.css";
+import mobile from "../../assets/mobile-ani.jpg";
+import web from "../../assets/web-ani.png";
 
 const WorkIntro = () => {
   return (
@@ -9,11 +11,14 @@ const WorkIntro = () => {
           <br />
           <span className="work"> Work</span>
         </h1>
-        <p className="work-description">Developing innovative solutions with MERN stack and Python, leveraging AWS for robust, scalable applications.</p>
+        <p className="work-description">
+          Developing innovative solutions with MERN stack and Python, leveraging
+          AWS for robust, scalable applications.
+        </p>
       </div>
-          <div className="WorkIntro-right">
-        <img src="../../../images/mobile-ani.jpg" alt="work" className="work-img-mobile" />
-        <img src="../../../images/web-ani.png" alt="work" className="work-img-web" />
+      <div className="WorkIntro-right">
+        <img src={mobile} alt="work" className="work-img-mobile" />
+        <img src={web} alt="work" className="work-img-web" />
       </div>
     </div>
   );
