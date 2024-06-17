@@ -9,8 +9,7 @@ const WorkIntro = () => {
           <br />
           <span className="work"> Work</span>
         </h1>
-        <p className="work-description">Full stack software developer with expertise in front-end and back-end development, 
-experienced in leading cross-functional teams. </p>
+        <p className="work-description">Developing innovative solutions with MERN stack and Python, leveraging AWS for robust, scalable applications.</p>
       </div>
           <div className="WorkIntro-right">
         <img src="../../../images/mobile-ani.jpg" alt="work" className="work-img-mobile" />
