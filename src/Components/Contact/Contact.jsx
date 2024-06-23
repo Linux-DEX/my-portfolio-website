@@ -6,10 +6,10 @@ const Contact = () => {
       <div className="Contact-left">
         <p className="email">sarabjeet.9353@gmail.com</p>
         <p className="linkedin">
-          <a href="www.linkedin.com/in/sarabjeet-singh-914aab254">LinkIn</a>
+          <a target="_blank" href="https://www.linkedin.com/in/sarabjeet-singh-914aab254">LinkedIn</a>
         </p>
         <p className="github">
-          <a href="https://github.com/Linux-DEX">GitHub</a>
+          <a target="_blank" href="https://github.com/Linux-DEX">GitHub</a>
         </p>
       </div>
       <div className="Contact-right">
