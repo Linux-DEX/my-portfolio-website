@@ -68,15 +68,39 @@
 }
 
 .highlight.blue {
-  color: rgb(93, 81, 255);
+  display: inline;
+  background-image: linear-gradient(
+    to right,
+    rgb(93, 81, 255),
+    rgb(93, 81, 255)
+  );
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  background-position: 0 90%;
 }
 
 .highlight.pink {
-  color: rgb(250, 97, 255);
+  display: inline;
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 97, 255),
+    rgb(250, 97, 255)
+  );
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  background-position: 0 90%;
 }
 
 .highlight.orange {
-  color: rgb(250, 88, 88);
+  display: inline;
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 88, 88),
+    rgb(250, 88, 88)
+  );
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  background-position: 0 90%;
 }
 
 .skill-back {
@@ -90,7 +114,7 @@
   height: 400px;
 }
 
-@media(max-width: 1280px) {
+@media (max-width: 1280px) {
   .Skill-heading {
     font-size: 3.2rem;
     margin-bottom: 30px;
@@ -131,7 +155,7 @@
   }
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   .Skill-heading {
     font-size: 3rem;
     margin-bottom: 30px;
@@ -157,7 +181,7 @@
   }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .Skill-heading {
     font-size: 3rem;
     margin-bottom: 30px;
@@ -192,7 +216,7 @@
   }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .Skills {
     height: auto;
   }
