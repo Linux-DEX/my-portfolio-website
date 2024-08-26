@@ -74,6 +74,10 @@ a {
     padding: 3rem;
   }
 
+  .filter-buttons p {
+    font-size: 1rem;
+  }
+
   .filter-buttons button {
     font-size: 1rem;
   }
@@ -85,6 +89,10 @@ a {
     gap: 2rem;
     padding: 4rem;
     flex-direction: column;
+  }
+
+  .filter-buttons{
+    gap: 0;
   }
 
   .filter-buttons button {
