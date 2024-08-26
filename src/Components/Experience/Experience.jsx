@@ -17,12 +17,12 @@ const Experience = () => {
             <p>https://healthdatamax.com</p>
             <p className="Experience-description">
               Healthcare risk adjustment and analytics solutions using MERN
-              stack, Python, and AWS.
+              stack, Python, and Azure.
             </p>
             <div className="tech-stack">
               <section className="tech">MERN</section>
               <section className="tech">Python</section>
-              <section className="tech">AWS</section>
+              <section className="tech">Azure</section>
             </div>
           </div>
           <div className="Experience-logo">
