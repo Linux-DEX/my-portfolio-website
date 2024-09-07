@@ -98,6 +98,8 @@ p {
   background: transparent;
   background-blend-mode: multiply;
   height: 120px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 .Experience-logo .company-logo {

@@ -20,7 +20,7 @@ const Skills = () => {
             <div className="vl-container">
               <div className="vl"></div>
               <p>
-                Experienced in both functional and OOP: Python, JAVA, JavaScript, TypeScript, Linux, GitHub, AWS, Docker
+                Experienced in both functional and OOP: Python, JAVA, JavaScript, TypeScript, Linux, GitHub, Azure, Docker
               </p>
             </div>
             <div className="hh">&lt;h3&gt; </div>
@@ -30,7 +30,7 @@ const Skills = () => {
           <div className="expertise-head">
             <img src={react} alt="" className="icon" />
             <h2 className="title">
-              <span className="highlight blue">Full Stack</span>
+              <span className="highlight blue">Full Stack Web</span>
               <br />
               Development
             </h2>

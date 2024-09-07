@@ -14,6 +14,17 @@
   margin-top: -90px;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 .expertise-cards {
   display: flex;
   justify-content: center;
@@ -29,6 +40,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
   padding: 2.7rem;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .expertise-head {

@@ -96,7 +96,12 @@ const ProjectGrid = () => {
 
       <div className="ProjectGrid">
         {filteredProjects.map((project, index) => (
-          <a key={index} target="_blank" rel="noopener noreferrer" href={project.link}>
+          <a
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={project.link}
+          >
             <Card
               image={project.image}
               title={project.title}

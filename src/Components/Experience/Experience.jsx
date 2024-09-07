@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Experience.css";
 
 const Experience = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState(0);
 
   const toggleExpand = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
