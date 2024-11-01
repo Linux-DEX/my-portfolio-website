@@ -10,8 +10,10 @@ const Home = () => {
         <hr />
         <h2 className="small-text">Aspiring</h2>
         <h1 className="big-text">Full Stack Developer</h1>
-        <p className="micro-text">with a passion for solving problems that involve creativity and
-innovation</p>
+        <p className="micro-text">
+          with a passion for solving problems that involve creativity and
+          innovation
+        </p>
       </div>
       <div className="Home-right">
         <div className="imgContainer">
