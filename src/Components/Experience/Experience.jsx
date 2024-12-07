@@ -15,7 +15,15 @@ const Experience = () => {
       link: "https://healthdatamax.com",
       description:
         "Healthcare risk adjustment and analytics solutions using MERN stack, Python, and Azure.",
-      tech: ["MERN", "Python", "Azure", "FARM", "FastAPI"],
+      tech: [
+        "ReactJS",
+        "FastAPI",
+        "MongoDB",
+        "Python",
+        "Azure",
+        "MERN",
+        "FARM",
+      ],
       logo: "https://images.squarespace-cdn.com/content/v1/5a164516bff2007c8d020af7/1514062696013-BAEF72PDSGHCJ6B8TY9H/logo.jpg?format=1500w",
     },
     {
@@ -40,7 +48,8 @@ const Experience = () => {
           className={`Experience-card ${
             expandedIndex === index ? "expanded" : ""
           }`}
-          onClick={() => toggleExpand(index)}>
+          onClick={() => toggleExpand(index)}
+        >
           <div className="head">
             <p>{exp.title}</p>
             <p>{exp.date}</p>
