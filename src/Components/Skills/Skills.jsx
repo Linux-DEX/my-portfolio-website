@@ -20,7 +20,7 @@ const Skills = () => {
             <div className="vl-container">
               <div className="vl"></div>
               <p>
-                Experienced in both functional and OOP: Python, JAVA, JavaScript, TypeScript, C/C++, GO, Linux, GitHub, Azure, Docker
+                Experienced in both functional and OOP: Python, JAVA, JavaScript, TypeScript, C/C++, GO, Linux, GitHub, Azure, Azure Devops, Docker 
               </p>
             </div>
             <div className="hh">&lt;h3&gt; </div>

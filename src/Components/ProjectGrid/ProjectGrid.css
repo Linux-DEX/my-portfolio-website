@@ -4,9 +4,9 @@
   margin-bottom: 20px;
   align-items: center;
   gap: 15px;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  /* animation: appear linear; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0% cover 40%; */
 }
 
 .filter-buttons p {
@@ -65,9 +65,9 @@
 
 a {
   text-decoration: none;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  /* animation: appear linear; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0% cover 40%; */
 }
 
 .large-card {

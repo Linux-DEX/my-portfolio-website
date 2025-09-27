@@ -23,6 +23,7 @@ const Experience = () => {
         "Azure",
         "FARM",
         "Azure function",
+        "Azure Devops",
       ],
       logo: "https://images.squarespace-cdn.com/content/v1/5a164516bff2007c8d020af7/1514062696013-BAEF72PDSGHCJ6B8TY9H/logo.jpg?format=1500w",
     },
