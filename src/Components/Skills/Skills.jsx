@@ -1,7 +1,7 @@
 import "./Skills.css";
-import pc from "../../assets/pc.png";
-import react from "../../assets/react.png";
-import flutter from "../../assets/flutter.png";
+import software_application from "../../assets/software-application.png";
+import web_design from "../../assets/web-design.png";
+import devops from "../../assets/devops.png";
 
 const Skills = () => {
   return (
@@ -10,9 +10,9 @@ const Skills = () => {
       <div className="expertise-cards">
         <div className="expertise-card">
           <div className="expertise-head">
-            <img src={pc} alt="" className="icon"/>
+            <img src={software_application} alt="" className="icon"/>
             <h2 className="title">
-              <span className="highlight pink">Software</span> <br /> Development
+              <span className="highlight pink">Software</span> <br /> Engineering
             </h2>
           </div>
           <div className="expertise-card-text">
@@ -20,7 +20,7 @@ const Skills = () => {
             <div className="vl-container">
               <div className="vl"></div>
               <p>
-                Experienced in both functional and OOP: Python, JAVA, JavaScript, TypeScript, C/C++, GO, Linux, GitHub, Azure, Azure Devops, Docker 
+               Strong foundation in core programming and automation : <span className="text-pink"> Python, JAVA, JavaScript, TypeScript, C/C++, GO, Linux, Shell Script(Bash/zsh). </span>
               </p>
             </div>
             <div className="hh">&lt;h3&gt; </div>
@@ -28,36 +28,36 @@ const Skills = () => {
         </div>
         <div className="expertise-card">
           <div className="expertise-head">
-            <img src={react} alt="" className="icon" />
+            <img src={web_design} alt="" className="icon" />
             <h2 className="title">
-              <span className="highlight blue">Full Stack Web</span>
+              <span className="highlight blue">Full Stack Web &amp;</span>
               <br />
-              Development
+              Mobile Development
             </h2>
           </div>
           <div className="hh">&lt;h3&gt; </div>
           <div className="vl-container">
             <div className="vl"></div>
             <p>
-              Passionate about Full stack development. Experience in React, ExpressJS, NodeJS, and MongoDB, NextJS, Vite.
+              Building scalable applications across web and mobile : <span className="text-blue"> React, Next.js, Vite, Typescript, Node.js, Express.js, MongoDB, SQL, Flutter, Dart, Firebase. </span>
             </p>
           </div>
           <div className="hh">&lt;h3&gt; </div>
         </div>
         <div className="expertise-card">
           <div className="expertise-head">
-            <img src={flutter} alt="" className="icon" />
+            <img src={devops} alt="" className="icon" />
             <h2 className="title">
-              <span className="highlight orange">Flutter Dev</span>
+              <span className="highlight orange">Cloud &amp; Devops</span>
               <br />
-              Android
+              Engineering
             </h2>
           </div>
           <div className="hh">&lt;h3&gt;</div>
           <div className="vl-container">
             <div className="vl"></div>
             <p>
-              Skilled in developing mobile apps using the Dart, Flutter framework and Firebase.
+              Deploying, maintaining, and scaling software in production : <span className="text-orange"> GitHub, Docker, Azure, Azure DevOps, CI/CD, Cloud Infrastructure. </span>
             </p>
           </div>
           <div className="hh">&lt;h3&gt;</div>
