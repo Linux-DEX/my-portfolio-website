@@ -13,7 +13,7 @@ const WorkIntro = () => {
         </h1>
         <p className="work-description">
           Developing innovative solutions with MERN stack and Python, leveraging
-          AWS for robust, scalable applications.
+          Azure for robust, scalable applications.
         </p>
       </div>
       <div className="WorkIntro-right">
