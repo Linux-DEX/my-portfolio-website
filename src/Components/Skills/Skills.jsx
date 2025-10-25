@@ -1,69 +1,187 @@
+import { useState } from "react";
 import "./Skills.css";
-import software_application from "../../assets/software-application.png";
-import web_design from "../../assets/web-design.png";
-import devops from "../../assets/devops.png";
+
+const categories = [
+  {
+    title: "Programming Languages",
+    skills: [
+      {
+        name: "Python",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png",
+      },
+      {
+        name: "JAVA",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png",
+      },
+      {
+        name: "JavaScript",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png",
+      },
+      {
+        name: "TypeScript",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png",
+      },
+      {
+        name: "C",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png",
+      },
+      {
+        name: "C++",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c++.png",
+      },
+      {
+        name: "GO",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/go.png",
+      },
+      {
+        name: "Bash",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png",
+      },
+    ],
+  },
+  {
+    title: "Frameworks & Libraries",
+    skills: [
+      {
+        name: "FastAPI",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/fastapi.png",
+      },
+      {
+        name: "React",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png",
+      },
+      {
+        name: "NextJS",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/next_js.png",
+      },
+      {
+        name: "Vite",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png",
+      },
+      {
+        name: "Redux",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redux.png",
+      },
+      {
+        name: "ExpressJS",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/express.png",
+      },
+      {
+        name: "Node.js",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png",
+      },
+      {
+        name: "Flutter",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/flutter.png",
+      },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      {
+        name: "MongoDB",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mongodb.png",
+      },
+      {
+        name: "MySQL",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png",
+      },
+      {
+        name: "PostgreSQL",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png",
+      },
+      {
+        name: "Redis",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redis.png",
+      },
+      {
+        name: "SQLite",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png",
+      },
+    ],
+  },
+  {
+    title: "Tools & Version Control",
+    skills: [
+      {
+        name: "Git",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png",
+      },
+      {
+        name: "GitHub",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github.png",
+      },
+      {
+        name: "Linux",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png",
+      },
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: [
+      {
+        name: "Microsoft Azure",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/microsoft_azure.png",
+      },
+      {
+        name: "Azure DevOps",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/ci_cd.png",
+      },
+      {
+        name: "Docker",
+        img: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png",
+      },
+    ],
+  },
+];
 
 const Skills = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredCategories =
+    selectedCategory === "All"
+      ? categories
+      : categories.filter((cat) => cat.title === selectedCategory);
+
   return (
-    <div className="Skills" id="Skills">
-      <h1 className="Skill-heading">My Expertise</h1>
-      <div className="expertise-cards">
-        <div className="expertise-card">
-          <div className="expertise-head">
-            <img src={software_application} alt="" className="icon"/>
-            <h2 className="title">
-              <span className="highlight pink">Software</span> <br /> Engineering
-            </h2>
-          </div>
-          <div className="expertise-card-text">
-            <div className="hh">&lt;h3&gt;</div>
-            <div className="vl-container">
-              <div className="vl"></div>
-              <p>
-               Strong foundation in core programming and automation : <span className="text-pink"> Python, JAVA, JavaScript, TypeScript, C/C++, GO, Linux, Shell Script(Bash/zsh). </span>
-              </p>
-            </div>
-            <div className="hh">&lt;h3&gt; </div>
-          </div>
-        </div>
-        <div className="expertise-card">
-          <div className="expertise-head">
-            <img src={web_design} alt="" className="icon" />
-            <h2 className="title">
-              <span className="highlight blue">Full Stack Web &amp;</span>
-              <br />
-              Mobile Development
-            </h2>
-          </div>
-          <div className="hh">&lt;h3&gt; </div>
-          <div className="vl-container">
-            <div className="vl"></div>
-            <p>
-              Building scalable applications across web and mobile : <span className="text-blue"> React, Next.js, Vite, Typescript, Node.js, Express.js, MongoDB, SQL, Flutter, Dart, Firebase. </span>
-            </p>
-          </div>
-          <div className="hh">&lt;h3&gt; </div>
-        </div>
-        <div className="expertise-card">
-          <div className="expertise-head">
-            <img src={devops} alt="" className="icon" />
-            <h2 className="title">
-              <span className="highlight orange">Cloud &amp; Devops</span>
-              <br />
-              Engineering
-            </h2>
-          </div>
-          <div className="hh">&lt;h3&gt;</div>
-          <div className="vl-container">
-            <div className="vl"></div>
-            <p>
-              Deploying, maintaining, and scaling software in production : <span className="text-orange"> GitHub, Docker, Azure, Azure DevOps, CI/CD, Cloud Infrastructure. </span>
-            </p>
-          </div>
-          <div className="hh">&lt;h3&gt;</div>
-        </div>
+    <div className="skills-section" id="Skills">
+      <h1 className="skills-title">My Expertise</h1>
+
+      <div className="skills-topbar">
+        <button
+          className={`topbar-item ${selectedCategory === "All" ? "active" : ""}`}
+          onClick={() => setSelectedCategory("All")}
+        >
+          All
+        </button>
+        {categories.map((cat, i) => (
+          <button
+            key={i}
+            className={`topbar-item ${selectedCategory === cat.title ? "active" : ""}`}
+            onClick={() => setSelectedCategory(cat.title)}
+          >
+            {cat.title}
+          </button>
+        ))}
       </div>
-      <img className="skill-back" src="https://tamalsen.dev/wp-content/uploads/2021/12/hello-world-html-code.png" alt="" />
+
+      <div className="skills-scroll-container fade-in">
+        {filteredCategories.map((category, i) => (
+          <div key={i} className="skills-category">
+            <h2 className="category-title">{category.title}</h2>
+            <div className="skills-grid">
+              {category.skills.map((skill, index) => (
+                <div className="skill-card" key={index}>
+                  <img src={skill.img} alt={skill.name} />
+                  <p>{skill.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
