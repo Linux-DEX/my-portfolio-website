@@ -85,13 +85,34 @@ const ProjectGrid = () => {
   });
 
   return (
-    <div>
-      <div className="filter-buttons">
-        <p>Filter by:</p>
-        <button onClick={() => setFilter("all")}>All</button>
-        <button onClick={() => setFilter("web")}>Web</button>
-        <button onClick={() => setFilter("app")}>App</button>
-        <button onClick={() => setFilter("linux")}>Linux</button>
+    <div className="projects-section">
+      <div className="projects-topbar-wrapper">
+        <div className="projects-topbar">
+          <button
+            className={`topbar-item ${filter === "all" ? "active" : ""}`}
+            onClick={() => setFilter("all")}
+          >
+            All
+          </button>
+          <button
+            className={`topbar-item ${filter === "web" ? "active" : ""}`}
+            onClick={() => setFilter("web")}
+          >
+            Web
+          </button>
+          <button
+            className={`topbar-item ${filter === "app" ? "active" : ""}`}
+            onClick={() => setFilter("app")}
+          >
+            App
+          </button>
+          <button
+            className={`topbar-item ${filter === "linux" ? "active" : ""}`}
+            onClick={() => setFilter("linux")}
+          >
+            Linux
+          </button>
+        </div>
       </div>
 
       <div className="ProjectGrid">
