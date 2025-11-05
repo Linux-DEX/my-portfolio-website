@@ -29,7 +29,7 @@ const About = () => {
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1w6mnEB90INV5ndu4MtVLG-bF6kIO_DTD/view?usp=share_link"
+          href="https://drive.google.com/file/d/1oeGRgQL963wPZVOWcHVZLLFVP_M3-4Mg/view?usp=sharing"
           download="Sarabjeet_Singh_Resume.pdf"
           className="resume-btn"
         >
